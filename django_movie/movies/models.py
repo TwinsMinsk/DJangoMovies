@@ -63,7 +63,7 @@ class Movie(models.Model):
     world_premiere = models.DateField('Премьера в мире', default=date.today)
     budgets = models.PositiveIntegerField('Бюджет', default=0, help_text='Указывать сумму в долларах')
     fees_in_usa = models.PositiveIntegerField('Сборы в США', default=0, help_text='Указывать сумму в долларах')
-    fees_in_worls = models.PositiveIntegerField('Сборы в мире', default=0, help_text='Указывать сумму в долларах')
+    fees_in_world = models.PositiveIntegerField('Сборы в мире', default=0, help_text='Указывать сумму в долларах')
 
     category = models.ForeignKey(Category, verbose_name='Категория', on_delete=models.SET_NULL, null=True)
     url = models.SlugField(max_length=150, unique=True)
