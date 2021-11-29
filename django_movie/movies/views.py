@@ -3,7 +3,7 @@ from django.views import View
 from django.views.generic import ListView, DetailView
 from .forms import ReviewForm
 
-from .models import Movie
+from .models import Movie, Category
 
 class MoviesView(ListView):
     '''Список фильмов'''
